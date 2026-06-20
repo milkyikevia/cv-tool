@@ -1,0 +1,70 @@
+# 画像・動画前処理設定ファイル
+
+# 画像処理設定
+image_settings:
+  # 切り抜き
+  crop:
+    enabled: true  # 有効(true)/無効(false)
+    coordinates: [200, 1000, 1600, 2000]  # [左, 上, 右, 下]
+
+  # 解像度変更
+  resize:
+    enabled: true
+    output_size: [1920, 1080]  # [幅, 高さ]
+
+  # 明るさ調整
+  brightness:
+    enabled: true
+    factor: 1.2  # > 1: 明度を上げる、< 1: 明度を下げる
+
+  # 彩度調整
+  saturation:
+    enabled: true
+    factor: 0.8  # > 1: 彩度を上げる、< 1: 彩度を下げる
+
+  # 回転
+  rotate:
+    enabled: true
+    angle: 3  # 90度単位で時計回りに回転 (1:90°, 2:180°, 3:270°)
+
+  # 垂直・水平反転
+  flip:
+    enabled: true
+    options: horizontally  # 反転方向 ('vertically': 垂直, 'horizontally': 水平)
+
+# 動画処理設定
+video_settings:
+  # 基本動画処理設定
+  preview: true     # 処理中のプレビュー表示
+  save_video: true  # 処理済み動画を保存
+  save_image: true  # フレーム画像を保存
+
+  # 切り抜き
+  crop:
+    enabled: true
+    coordinates: [100, 200, 800, 1000]  # [左, 上, 右, 下]
+
+  # 解像度変更
+  resize:
+    enabled: true
+    output_size: [640, 480]  # [幅, 高さ]
+
+  # 明るさ調整
+  brightness:
+    enabled: true
+    factor: 1.2  # > 1: 明度を上げる、< 1: 明度を下げる
+
+  # 彩度調整
+  saturation:
+    enabled: true
+    factor: 0.8  # > 1: 彩度を上げる、< 1: 彩度を下げる
+
+  # 回転
+  rotate:
+    enabled: true
+    angle: 3  # 90度単位で時計回りに回転 (1:90°, 2:180°, 3:270°)
+
+  # 垂直・水平反転
+  flip:
+    enabled: true
+    options: horizontally  # 反転方向 ('vertically': 垂直, 'horizontally': 水平)
